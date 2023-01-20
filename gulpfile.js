@@ -25,7 +25,7 @@ function bundle(debug = false) {
 function build(entries, name, debug = false) {
     const bundle = browserify(entries, { debug: debug })
         .plugin(tsify)
-        .transform(literalify.configure({ 'playcanvas': 'window.pc' }, null))
+        .transform(literalify.configure({ 'playcanvas': 'window.pc' }, null));
     !debug && bundle.transform(envify).transform(uglifyify, { sourceMap: false });
     return bundle.bundle()
         .pipe(source(name))

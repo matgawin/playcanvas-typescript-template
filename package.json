@@ -17,6 +17,7 @@
         "push:all": "pnpm run check:branch && npx dotenv -- pcsync pushAll -y",
         "pull:all": "pnpm run check:branch && npx dotenv -- pcsync pullAll -y",
         "build:debug": "npx gulp build:debug && pnpm run push:all",
+        "build:release": "npx gulp build:release && pnpm run push:all",
         "download": "pnpm run check:branch && npx dotenv -- node tools/download-build.js",
         "build:run": "pnpm run build:debug && pnpm run download && pnpm start",
         "start": "node tools/start-server.js"
