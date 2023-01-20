@@ -1,0 +1,4 @@
+{
+    "PLAYCANVAS_BAD_FILE_REG": "^\\.|~$|tsconfig.json",
+    "PLAYCANVAS_BAD_FOLDER_REG": "^\\.|typings"
+}

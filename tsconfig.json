@@ -1,0 +1,38 @@
+﻿{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "target": "ES5",
+        "lib": [
+            "ES6",
+            "DOM"
+        ],
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": false,
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "allowJs": true,
+        "checkJs": false,
+        "sourceMap": true,
+        "removeComments": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": false,
+        "alwaysStrict": false,
+        "noImplicitReturns": true,
+        "noImplicitOverride": true,
+        "noPropertyAccessFromIndexSignature": false,
+        "skipLibCheck": false
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

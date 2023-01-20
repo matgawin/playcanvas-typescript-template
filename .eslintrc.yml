@@ -1,0 +1,28 @@
+﻿extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
+parser: "@typescript-eslint/parser"
+plugins:
+  - "@typescript-eslint"
+ignorePatterns:
+  - "build/"
+  - "*.js"
+  - "gulpfile.js"
+rules:
+  no-shadow: off
+  "@typescript-eslint/no-shadow":
+    - error
+  no-use-before-define: off
+  "@typescript-eslint/no-use-before-define":
+    - error
+  complexity:
+    - error
+    - 15
+  no-inner-declarations: off
+  no-namespace: off
+  "@typescript-eslint/no-namespace":
+    - off
+  no-eval: error
+  no-multiple-empty-lines: [ error, { "max": 1 } ]
+  no-implied-eval: error
+  prefer-promise-reject-errors: [ warn, {"allowEmptyReject": true}]

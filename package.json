@@ -1,0 +1,52 @@
+{
+    "name": "playcanvas-typescript-template",
+    "version": "1.0.0",
+    "author": "Mateusz Gawin",
+    "keywords": [
+        "typescript",
+        "WebGL",
+        "WebGL2",
+        "game",
+        "engine",
+        "HTML5",
+        "playcanvas"
+    ],
+    "scripts": {
+        "check:branch": "dotenv -- node tools/set-pc-branch.js",
+        "diff:all": "pnpm run check:branch && npx dotenv -- pcsync diffAll",
+        "push:all": "pnpm run check:branch && npx dotenv -- pcsync pushAll -y",
+        "pull:all": "pnpm run check:branch && npx dotenv -- pcsync pullAll -y",
+        "build:debug": "npx gulp build:debug && pnpm run push:all",
+        "download": "pnpm run check:branch && npx dotenv -- node tools/download-build.js",
+        "build:run": "pnpm run build:debug && pnpm run download && pnpm start",
+        "start": "node tools/start-server.js"
+    },
+    "devDependencies": {
+        "@browserify/envify": "^6.0.0",
+        "@browserify/uglifyify": "^6.0.0",
+        "@types/adm-zip": "^0.5.0",
+        "@typescript-eslint/eslint-plugin": "^5.48.2",
+        "@typescript-eslint/parser": "^5.48.2",
+        "adm-zip": "^0.5.10",
+        "axios": "^1.2.3",
+        "browserify": "^17.0.0",
+        "dotenv-cli": "^7.0.0",
+        "eslint": "^8.32.0",
+        "express": "^4.18.2",
+        "glob": "^8.1.0",
+        "gulp": "^4.0.2",
+        "gulp-eslint": "^6.0.0",
+        "gulp-typedoc": "^3.0.2",
+        "literalify": "^0.4.0",
+        "playcanvas-sync": "^1.1.1",
+        "tsify": "^5.0.4",
+        "typedoc": "^0.23.24",
+        "typedoc-plugin-mdn-links": "^2.0.2",
+        "typedoc-plugin-merge-modules": "^4.0.1",
+        "typescript": "^4.9.4",
+        "vinyl-source-stream": "^2.0.0"
+    },
+    "dependencies": {
+        "playcanvas": "^1.60.0"
+    }
+}
