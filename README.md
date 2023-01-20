@@ -1,3 +1,5 @@
+Example project that uses this template: [example](https://playcanvas.com/project/1030517/overview/testtypescript)
+
 ## Installation
 
 Clone repository:
