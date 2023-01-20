@@ -46,7 +46,7 @@ yarn install
 | `pnpm run push:all`          | Pushes `build/main.bundle.js` to playcanvas project.                                         |
 | `pnpm run pull:all`          | Pulls files from playcanvas project.                                                         |
 | `pnpm run download`          | Downloads your applications build from playcanvas, and unpacks it in `out` directory.        |
-| `pnpm run start`             | Starts server local server with downloaded build located in `out` directory.                 |
+| `pnpm run start`             | Starts local server with downloaded build located in `out` directory.                        |
 | `pnpm run build:run`         | Makes debug build, pushes it, downloads application and then starts local server.            |
 | `pnpm gulp docs`             | Generates TypeDoc documentation files in `docs` directory.                                   |
 | `pnpm gulp eslint`           | Start eslint linter.                                                                         |
